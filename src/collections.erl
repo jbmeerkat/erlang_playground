@@ -1,11 +1,11 @@
 -module(collections).
--export([lenth/1, reverse/1, duplicate/2, zip/2, quicksort/1]).
+-export([length/1, reverse/1, duplicate/2, zip/2, quicksort/1]).
 
--spec lenth(list()) -> integer().
+-spec length(list()) -> integer().
 %% @doc returns list length
-lenth(L) when is_list(L) -> lenth(L, 0).
-lenth([], Acc) -> Acc;
-lenth([_|T], Acc) -> lenth(T, Acc + 1).
+length(L) when is_list(L) -> length(L, 0).
+length([], Acc) -> Acc;
+length([_|T], Acc) -> length(T, Acc + 1).
 
 -spec reverse(list()) -> list().
 %% @doc reverts list
