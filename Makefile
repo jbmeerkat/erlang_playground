@@ -17,6 +17,9 @@ clean:
 distclean: clean
 	$(REBAR) delete-deps
 
+shell:
+	$(REBAR) shell
+
 docs:
 	@erl -noshell -run edoc_run application '$(APP)' '"."' '[]'
 
