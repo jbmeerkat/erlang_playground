@@ -1,24 +1,23 @@
 ERL = $(shell which erl)
-REBAR=$(shell which rebar)
 
 APP := erlang_playground
 
 .PHONY: all deps clean distclean docs
 
 all: deps
-	$(REBAR) compile
+	@./rebar compile
 
 deps:
-	$(REBAR) get-deps
+	@./rebar get-deps
 
 clean:
-	$(REBAR) clean
+	@./rebar clean
 
 distclean: clean
-	$(REBAR) delete-deps
+	@./rebar delete-deps
 
 shell:
-	$(REBAR) shell
+	@./rebar shell
 
 docs:
 	@erl -noshell -run edoc_run application '$(APP)' '"."' '[]'
