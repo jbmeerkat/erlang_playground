@@ -1,3 +1,3 @@
 %% encoding: UTF-8
 {application,erlang_playground}.
-{modules,[collections,higher_order_functions]}.
+{modules,[calc,collections,higher_order_functions]}.
