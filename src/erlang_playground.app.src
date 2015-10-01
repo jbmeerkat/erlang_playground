@@ -2,6 +2,6 @@
  [
   {description, "Learning Erlang"},
   {vsn, "1"},
-  {registered, [collections, higher_order_functions, rpn]},
+  {registered, [collections, higher_order_functions, rpn, game]},
   {applications, [kernel, stdlib]}
  ]}.
