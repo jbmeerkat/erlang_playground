@@ -2,6 +2,11 @@
  [
   {description, "Learning Erlang"},
   {vsn, "1"},
-  {registered, [collections, higher_order_functions, rpn, game, 'messages/bender']},
+  {registered, [collections,
+                higher_order_functions,
+                rpn,
+                game,
+                'messages/bender',
+                'messages/better_bender']},
   {applications, [kernel, stdlib]}
  ]}.

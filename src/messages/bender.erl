@@ -1,6 +1,7 @@
 -module(bender).
 -export([say/0]).
 
+%% @doc simple Bender simulator
 say() ->
   receive
     {From, hi} ->
