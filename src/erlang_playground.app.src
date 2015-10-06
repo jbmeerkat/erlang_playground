@@ -7,6 +7,8 @@
                 rpn,
                 game,
                 'messages/bender',
-                'messages/better_bender']},
+                'messages/better_bender',
+                chuck_norris,
+                jsx]},
   {applications, [kernel, stdlib]}
  ]}.
